@@ -52,6 +52,6 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: ssh-auth-key
-  data:
-    authorized_keys: |
-      ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0FwmMBdxp66qOWRXGIZQio0nfvqKfiSZ/+90CEz8I52bh5ajIEboTgHr26591sAEulg7FK2d847lvib1X6Teddui+QkUQwEKHFXY+D+vDntdYJeBCg+yPA+gxzFZ0zWQVXsCbIZNIKpnR6X6/SAOXMkXpOaMAtfd7faAOSOOBLgc/v9wolSlDLdZt67SuuJf6c44dPFqAwVeE4h6hsoqWnCOeH8wFMl7UWZFgMa9tmXAUpB4rlCcDKjr4Dp92VlB7PJHdGypjpyT9n4Cy/LNmeVLO+udejNSWDkachqZxZW7Nbwqx1jCpSgLnX/wr2qbJyxfSXhNxUw2aneisNlD/Q==
+data:
+  authorized_keys: |
+    ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0FwmMBdxp66qOWRXGIZQio0nfvqKfiSZ/+90CEz8I52bh5ajIEboTgHr26591sAEulg7FK2d847lvib1X6Teddui+QkUQwEKHFXY+D+vDntdYJeBCg+yPA+gxzFZ0zWQVXsCbIZNIKpnR6X6/SAOXMkXpOaMAtfd7faAOSOOBLgc/v9wolSlDLdZt67SuuJf6c44dPFqAwVeE4h6hsoqWnCOeH8wFMl7UWZFgMa9tmXAUpB4rlCcDKjr4Dp92VlB7PJHdGypjpyT9n4Cy/LNmeVLO+udejNSWDkachqZxZW7Nbwqx1jCpSgLnX/wr2qbJyxfSXhNxUw2aneisNlD/Q==
