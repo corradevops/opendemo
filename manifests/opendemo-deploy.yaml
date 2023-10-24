@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opendemo-deployment
+  labels:
+    app: opendemo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opendemo
+  template:
+    metadata:
+      labels:
+        app: opendemo
+    spec:
+      containers:
+      - name: opendemo
+        image: debuggerboy/sshserver:0.0.2
+        ports:
+        - containerPort: 22
+        env:
+        - name: UID
+          value: 1001
+        - name: GID
+          value: 1001
+        - name: USER
+          value: cdev1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: opendemo-service
+  labels:
+    app: opendemo
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 2222
+  selector:
+    app: opendemo
