@@ -37,6 +37,6 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 2222
+  - port: 22
   selector:
     app: opendemo
