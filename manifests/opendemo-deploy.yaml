@@ -21,7 +21,7 @@ spec:
         ports:
         - containerPort: 22
         volumeMounts:
-        - name: authorized_keys-volume
+        - name: authorized-keys-volume
           mountPath: /home/anish/authorized_keys
         env:
         - name: "UID"
@@ -31,7 +31,7 @@ spec:
         - name: "USER"
           value: "cdev1"
       volumes:
-        - name: authorized_keys-volume
+        - name: authorized-keys-volume
           configMap:
             name: ssh-auth-key
 ---
