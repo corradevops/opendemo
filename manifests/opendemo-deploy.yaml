@@ -22,7 +22,7 @@ spec:
         - containerPort: 22
         volumeMounts:
         - name: authorized-keys-volume
-          mountPath: /home/anish/authorized_keys
+          mountPath: /home/anish/.ssh
         env:
         - name: "UID"
           value: "1001"
